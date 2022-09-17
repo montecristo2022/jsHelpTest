@@ -4,6 +4,8 @@ li {
 
 .img {
     height: 50px;
+    padding-top: 20px;
+    padding-left: 50px;
 }
 
 .profileNameSpan {
@@ -16,7 +18,12 @@ li {
 
 .profileContainer {
     background-color: grey;
+    height: 550px;
     width: 200px;
-    padding-left: 20px;
+    padding-left: 40px;
+}
+
+.statsContainer {
+    padding-left: 0;
 }
 

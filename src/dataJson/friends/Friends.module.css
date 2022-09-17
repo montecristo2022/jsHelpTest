@@ -1,6 +1,7 @@
 .friendsContainer {
    background-color: darkkhaki;
    width: 200px;
+   height: 550px;
 }
 
 .friendsImg {
@@ -25,5 +26,9 @@ background-color: green;
         background-color: darkred;
 }
 
+
+.eachFriend{
+    padding-top: 20px;
+}
 
 

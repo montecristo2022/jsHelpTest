@@ -1,4 +1,5 @@
 import styles from "../statistics/Statistics.module.css"
+import PropTypes from "prop-types";
 
 
 export const Statistics = ({ stats }) => {
@@ -19,3 +20,6 @@ export const Statistics = ({ stats }) => {
     )
 }
 
+Statistics.propTypes = {
+  stats: PropTypes.array,
+};

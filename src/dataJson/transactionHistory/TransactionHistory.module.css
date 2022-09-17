@@ -1,7 +1,24 @@
 .transactionContainer {
-    display: block;
-    max-width: 860px;
+    height: 550px;
+    max-width: 500px;
     width: 100%;
+    
+  padding-left: 40px;
    
-    background-color: red;
+    background-color: grey;
 }
+
+.transactionType{
+    padding-right: 100px;
+    padding-top: 20px;
+}
+
+
+.transactionType1 {
+    padding-right: 130px;
+    padding-top: 20px;
+}
+
+/* .transactionTypeData{
+    padding-right: 50px;
+} */

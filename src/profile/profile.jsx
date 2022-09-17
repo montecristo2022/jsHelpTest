@@ -1,6 +1,6 @@
 
 import styles from '../profile/Profile.module.css'
-
+import PropTypes from "prop-types";
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
@@ -12,7 +12,7 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
         <p className={styles.profileSpan}>{location}</p>
       </div>
 
-      <ul>
+      <ul className={styles.statsContainer}>
         <li>
           <span className={styles.profileSpan}>Followers: </span>
           <span className={styles.profileSpan}>{stats.followers}</span>
@@ -28,4 +28,12 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
       </ul>
     </div>
   );
+};
+
+
+Profile.propTypes = {
+  username: PropTypes.string,
+  tag: PropTypes.string,
+  location: PropTypes.string,
+  stats: PropTypes.object,
 };
