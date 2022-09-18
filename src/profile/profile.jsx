@@ -6,7 +6,7 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
     <div className={styles.profileContainer}>
       <div>
-        <img className={styles.img} src={avatar} alt="Profile Picture"/>
+        <img className={styles.img} src={avatar} alt="Profile Avatar"/>
         <p className={ styles.profileNameSpan}> {username}</p>
         <p className={styles.profileSpan} >@{tag}</p>
         <p className={styles.profileSpan}>{location}</p>
@@ -20,6 +20,7 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
         <li>
           <span className={styles.profileSpan}>Views: </span>
           <span className={styles.profileSpan}>{stats.views}</span>
+          
         </li>
         <li>
           <span className={styles.profileSpan}>Likes: </span>
