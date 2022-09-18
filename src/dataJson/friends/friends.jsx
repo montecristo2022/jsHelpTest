@@ -1,19 +1,7 @@
 import styles from '../friends/Friends.module.css';
 // import friends from '../dataJson/friends.json';
 import PropTypes from "prop-types";
-import peoples from '../friends.json';
 
-
-
-// for (const el of peoples) {
-//   if (el.isOnline === false) {
-//     isOnline = styles.statisticStatusRed
-//   }
-//   if (el.isOnline === true) {
-//     isOnline = styles.statisticStatusGreen
-//   }
- 
-// }
 
 
 
@@ -35,10 +23,10 @@ export const FriendList = ({  friends }) => {
           <li key={friend.id}className={styles.eachFriend}>
                 <span className={friend.isOnline ? styles.statisticStatusGreen : styles.statisticStatusRed}></span>
             <span>{friend.name}</span>
-            <img className={styles.friendsImg} src={friend.avatar}></img>
+            <img className={styles.friendsImg} src={friend.avatar} alt="friend"></img>
           </li>
         ))}
-      
+   
     </ul>
       
       
@@ -56,7 +44,7 @@ export const FriendList = ({  friends }) => {
     // </ul>
       
        
- 
+
   
   );
 };

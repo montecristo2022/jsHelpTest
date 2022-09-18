@@ -1,7 +1,7 @@
-import userEvent from "@testing-library/user-event";
+// import userEvent from "@testing-library/user-event";
 import React from "react";
 // import { ReactDOM } from "react";
-import ReactDOM from "react-dom/client";
+// import ReactDOM from "react-dom/client";
 
 
 import { Profile } from "profile/profile";
